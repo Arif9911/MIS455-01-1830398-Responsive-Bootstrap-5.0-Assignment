@@ -1,17 +1,74 @@
 /* Custom Styles */
 body {
-    color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: sans-serif, serif;
 }
 
-h5, p{
+h5, .carousel-caption > p{
     color: white;
     border-radius: 8px;
 }
 
-p{
+.carousel-caption > p{
     background-color: black;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card{
+    margin: 5px;
+    width: 320px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.car {
+  position: relative;
+  top: 50%;
+  left: -100px; /* Initial position outside the screen */
+  width: 200px;
+  height: 45px;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: black;
+  animation: drive 20s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+
+@keyframes drive {
+  0% {
+    left: -100px; /* Start position */
+  }
+  100% {
+    left: calc(100% + 100px); /* End position (beyond the screen width) */
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg); /* Rotate the wheel 360 degrees */
+  }
+}
+
