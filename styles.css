@@ -1,0 +1,41 @@
+/* Custom Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer.footer {
+    background-color: #f8f9fa;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    /* Medium devices (tablets, 768px and up) */
+    body {
+        flex-direction: row;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    footer.footer {
+        position: static;
+    }
+
+    .carousel-item {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Large devices (desktops, 992px and up) */
+    .card {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
