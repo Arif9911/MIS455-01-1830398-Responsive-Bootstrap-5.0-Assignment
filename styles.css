@@ -53,6 +53,7 @@ a {
   text-align: center;
   padding: 10px 20px;
   background-color: black;
+  border-radius: 5px;
   animation: drive 20s linear infinite; /* Adjust duration and timing function as needed */
 }
 
